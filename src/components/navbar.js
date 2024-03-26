@@ -5,7 +5,7 @@ class Navbar extends HTMLElement {
     }
 
     isActive(path) {
-        return window.location.pathname === path;
+        return window.location.pathname === `/${path}`;
     }
 
     createShadowRoot() {
@@ -14,11 +14,11 @@ class Navbar extends HTMLElement {
 
     render() {
         const pages = [
-            { path: '/index.html', label: 'Beranda' },
-            { path: '/tentang.html', label: 'Tentang' },
-            { path: '/kisah.html', label: 'Kisahku' },
-            { path: '/pendidikan.html', label: 'Pendidikan' },
-            { path: '/tugas.html', label: 'Tugas' }
+            { path: 'index.html', label: 'Beranda' },
+            { path: 'tentang.html', label: 'Tentang' },
+            { path: 'kisah.html', label: 'Kisahku' },
+            { path: 'pendidikan.html', label: 'Pendidikan' },
+            { path: 'tugas.html', label: 'Tugas' }
         ];
 
         const currentPath = window.location.pathname;
