@@ -25,7 +25,7 @@ class Navbar extends HTMLElement {
 
         const navbarItems = pages.map(page => `
             <li>
-                <a href="${page.path}" class="nav-link px-2 ${this.isActive(page.path) ? 'active border-bottom border-primary' : 'text-secondary'}">
+                <a href="${page.path}" class="nav-link px-2 text-white ${this.isActive(page.path) ? 'active border-bottom border-white fw-bold' : ''}">
                     ${page.label}
                 </a>
             </li>
@@ -37,7 +37,7 @@ class Navbar extends HTMLElement {
             <header class="absolute z-[100] d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                 <div class="col-md-3 mb-2 mb-md-0">
                 </div>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-red-900 font-extrabold">
                     ${navbarItems}
                 </ul>
                 <div class="col-md-3 text-end">

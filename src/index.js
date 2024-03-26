@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.createElement('div');
     content.innerHTML = `
     <navbar-component/>
+
     `;
     const htmlContent = document.getElementById('content');
     root.append(content);
