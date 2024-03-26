@@ -1,7 +1,11 @@
-// import './components/navbar.js';
-
 document.addEventListener('DOMContentLoaded', () => {
+    import('./components/navbar.js');
     const root = document.getElementById('root');
-    const navbar = document.getElementById('navbar-component');
-    // root.appendChild(navbar);
+    const content = document.createElement('div');
+    content.innerHTML = `
+    <navbar-component/>
+    `;
+    const htmlContent = document.getElementById('content');
+    root.append(content);
+    root.append(htmlContent);
 });
