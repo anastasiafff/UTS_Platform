@@ -1,0 +1,1 @@
+import tailwind from 'https://cdn.tailwindcss.com'
