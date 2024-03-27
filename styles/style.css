@@ -1,0 +1,42 @@
+/* .bg {
+    background-image: url('../public/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    filter: blur(4px);
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 100%;
+    height: auto;
+    min-height: min-content;
+} */
+
+.content {
+    filter: blur(10px);
+    z-index: 10;
+    background: none;
+    -webkit-filter: blur(5px);
+    height: 100vh;
+}
+
+#root {
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    max-height: max-content;
+    min-height: 100vh;
+}
+
+.modal-backdrop {
+    width: 0;
+    height: 0;
+}
+
+body {
+    background-image: url('../public/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    max-height: max-content;
+    min-height: 100vh;
+    
+}
